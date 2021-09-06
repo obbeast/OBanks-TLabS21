@@ -1,0 +1,16 @@
+void setup(){
+  size(100, 100);}
+
+void draw(){
+background(255);
+strokeWeight(3);
+line(40, 50, 40, 70);
+line(40, 50, 60, 50);
+line(40, 50, 50, 40);
+line(50, 40, 70, 40);
+line(60, 50, 60, 70);
+line(60, 50, 70, 40);
+line(70, 40, 70, 60);
+line(40, 70, 60, 70);
+line(60, 70, 70, 60);
+}
