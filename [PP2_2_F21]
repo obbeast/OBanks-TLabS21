@@ -1,0 +1,23 @@
+//1. Declare variables
+float y = 0.0;
+float x = 0.0;
+
+
+//2. et display size
+void setup(){
+  size(100,100);
+}
+
+//3. Draw shape. Increase increment
+void draw(){
+  background(204);
+  if(y < 99) { 
+  line(0, 0, 0, y);
+  }
+  else{
+    line(0, 0, 0, y/11);
+  }
+    x += .0;
+    y += 5.0;
+
+}
