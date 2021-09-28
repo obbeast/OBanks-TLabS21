@@ -1,0 +1,55 @@
+PVector location;
+PVector location2;
+PVector velocity2;
+PVector velocity;
+
+void setup() {
+  size(640,360);
+  location = new PVector(630,180);
+  velocity = new PVector(2.5,2);
+  location2 = new PVector(10,180);
+  velocity2 = new PVector(2.5,2);
+}
+
+void draw() {
+  background(255);
+  
+  location.add(velocity);
+  
+  
+  location.add(velocity);
+  if ((location.x > width) || (location.x < 0)) {
+    velocity.x = velocity.x * -1;
+  }
+    if ((location.y > height) || (location.y < 0)) {
+    velocity.y = velocity.y * -1;
+    }
+    
+    location2.add(velocity2);
+    
+      if ((location2.x > width) || (location2.x < 0)) {
+    velocity2.x = velocity2.x * -1;
+      }
+       
+       if ((location.x == location2.x)) {
+         location.x = random(-1, 1);
+       }
+       
+    if ((location2.y > height) || (location2.y < 0)) {
+    velocity2.y = velocity2.y * -1;
+    }
+    
+    
+    stroke(8);
+    fill(175);
+    ellipse(location.x,location.y,16,16);
+    
+    stroke(0);
+    fill(175);
+    ellipse(location2.x,location2.y,26,26) ;
+    
+    
+}
+    
+    
+    
